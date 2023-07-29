@@ -1,11 +1,10 @@
-@extends('layouts.master')
-@section('title') @lang('translation.crm') @endsection
-@section('content')
+<?php $__env->startSection('title'); ?> <?php echo app('translator')->get('translation.crm'); ?> <?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
 
-    @component('components.breadcrumb')
-        @slot('li_1') Dashboards @endslot
-        @slot('title') CRM @endslot
-    @endcomponent
+    <?php $__env->startComponent('components.breadcrumb'); ?>
+        <?php $__env->slot('li_1'); ?> Dashboards <?php $__env->endSlot(); ?>
+        <?php $__env->slot('title'); ?> CRM <?php $__env->endSlot(); ?>
+    <?php echo $__env->renderComponent(); ?>
     <div class="row">
         <div class="col-xl-12">
             <div class="card crm-widget">
@@ -206,7 +205,7 @@
                                 <tr>
                                     <td>Absternet LLC</td>
                                     <td>Sep 20, 2021</td>
-                                    <td><img src="{{ URL::asset('build/images/users/avatar-1.jpg') }}" alt="" class="avatar-xs rounded-circle me-2">
+                                    <td><img src="<?php echo e(URL::asset('build/images/users/avatar-1.jpg')); ?>" alt="" class="avatar-xs rounded-circle me-2">
                                         <a href="#javascript: void(0);" class="text-body fw-medium">Donald Risher</a></td>
                                     <td><span class="badge bg-success-subtle text-success p-2">Deal Won</span></td>
                                     <td><div class="text-nowrap">$100.1K</div></td>
@@ -214,7 +213,7 @@
                                 <tr>
                                     <td>Raitech Soft</td>
                                     <td>Sep 23, 2021</td>
-                                    <td><img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt="" class="avatar-xs rounded-circle me-2">
+                                    <td><img src="<?php echo e(URL::asset('build/images/users/avatar-2.jpg')); ?>" alt="" class="avatar-xs rounded-circle me-2">
                                         <a href="#javascript: void(0);" class="text-body fw-medium">Sofia Cunha</a></td>
                                     <td><span class="badge bg-warning-subtle text-warning p-2">Intro Call</span></td>
                                     <td><div class="text-nowrap">$150K</div></td>
@@ -222,7 +221,7 @@
                                 <tr>
                                     <td>William PVT</td>
                                     <td>Sep 27, 2021</td>
-                                    <td><img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}" alt="" class="avatar-xs rounded-circle me-2">
+                                    <td><img src="<?php echo e(URL::asset('build/images/users/avatar-3.jpg')); ?>" alt="" class="avatar-xs rounded-circle me-2">
                                         <a href="#javascript: void(0);" class="text-body fw-medium">Luis Rocha</a></td>
                                     <td><span class="badge bg-danger-subtle text-danger p-2">Stuck</span></td>
                                     <td><div class="text-nowrap">$78.18K</div></td>
@@ -230,7 +229,7 @@
                                 <tr>
                                     <td>Loiusee LLP</td>
                                     <td>Sep 30, 2021</td>
-                                    <td><img src="{{ URL::asset('build/images/users/avatar-4.jpg') }}" alt="" class="avatar-xs rounded-circle me-2">
+                                    <td><img src="<?php echo e(URL::asset('build/images/users/avatar-4.jpg')); ?>" alt="" class="avatar-xs rounded-circle me-2">
                                         <a href="#javascript: void(0);" class="text-body fw-medium">Vitoria Rodrigues</a></td>
                                     <td><span class="badge bg-success-subtle text-success p-2">Deal Won</span></td>
                                     <td><div class="text-nowrap">$180K</div></td>
@@ -238,7 +237,7 @@
                                 <tr>
                                     <td>Apple Inc.</td>
                                     <td>Sep 30, 2021</td>
-                                    <td><img src="{{ URL::asset('build/images/users/avatar-6.jpg') }}" alt="" class="avatar-xs rounded-circle me-2">
+                                    <td><img src="<?php echo e(URL::asset('build/images/users/avatar-6.jpg')); ?>" alt="" class="avatar-xs rounded-circle me-2">
                                         <a href="#javascript: void(0);" class="text-body fw-medium">Vitoria Rodrigues</a></td>
                                     <td><span class="badge bg-info-subtle text-info p-2">New Lead</span></td>
                                     <td><div class="text-nowrap">$78.9K</div></td>
@@ -403,17 +402,17 @@
                                     <div class="avatar-group">
                                         <div class="avatar-group-item">
                                             <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Stine Nielsen">
-                                                <img src="{{ URL::asset('build/images/users/avatar-1.jpg') }}" alt="" class="rounded-circle avatar-xxs">
+                                                <img src="<?php echo e(URL::asset('build/images/users/avatar-1.jpg')); ?>" alt="" class="rounded-circle avatar-xxs">
                                             </a>
                                         </div>
                                         <div class="avatar-group-item">
                                             <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Jansh Brown">
-                                                <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt="" class="rounded-circle avatar-xxs">
+                                                <img src="<?php echo e(URL::asset('build/images/users/avatar-2.jpg')); ?>" alt="" class="rounded-circle avatar-xxs">
                                             </a>
                                         </div>
                                         <div class="avatar-group-item">
                                             <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Dan Gibson">
-                                                <img src="{{ URL::asset('build/images/users/avatar-3.jpg') }}" alt="" class="rounded-circle avatar-xxs">
+                                                <img src="<?php echo e(URL::asset('build/images/users/avatar-3.jpg')); ?>" alt="" class="rounded-circle avatar-xxs">
                                             </a>
                                         </div>
                                         <div class="avatar-group-item">
@@ -448,22 +447,22 @@
                                     <div class="avatar-group">
                                         <div class="avatar-group-item">
                                             <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Frida Bang">
-                                                <img src="{{ URL::asset('build/images/users/avatar-4.jpg') }}" alt="" class="rounded-circle avatar-xxs">
+                                                <img src="<?php echo e(URL::asset('build/images/users/avatar-4.jpg')); ?>" alt="" class="rounded-circle avatar-xxs">
                                             </a>
                                         </div>
                                         <div class="avatar-group-item">
                                             <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Malou Silva">
-                                                <img src="{{ URL::asset('build/images/users/avatar-5.jpg') }}" alt="" class="rounded-circle avatar-xxs">
+                                                <img src="<?php echo e(URL::asset('build/images/users/avatar-5.jpg')); ?>" alt="" class="rounded-circle avatar-xxs">
                                             </a>
                                         </div>
                                         <div class="avatar-group-item">
                                             <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Simon Schmidt">
-                                                <img src="{{ URL::asset('build/images/users/avatar-6.jpg') }}" alt="" class="rounded-circle avatar-xxs">
+                                                <img src="<?php echo e(URL::asset('build/images/users/avatar-6.jpg')); ?>" alt="" class="rounded-circle avatar-xxs">
                                             </a>
                                         </div>
                                         <div class="avatar-group-item">
                                             <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Tosh Jessen">
-                                                <img src="{{ URL::asset('build/images/users/avatar-7.jpg') }}" alt="" class="rounded-circle avatar-xxs">
+                                                <img src="<?php echo e(URL::asset('build/images/users/avatar-7.jpg')); ?>" alt="" class="rounded-circle avatar-xxs">
                                             </a>
                                         </div>
                                         <div class="avatar-group-item">
@@ -498,17 +497,17 @@
                                     <div class="avatar-group">
                                         <div class="avatar-group-item">
                                             <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Nina Schmidt">
-                                                <img src="{{ URL::asset('build/images/users/avatar-8.jpg') }}" alt="" class="rounded-circle avatar-xxs">
+                                                <img src="<?php echo e(URL::asset('build/images/users/avatar-8.jpg')); ?>" alt="" class="rounded-circle avatar-xxs">
                                             </a>
                                         </div>
                                         <div class="avatar-group-item">
                                             <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Stine Nielsen">
-                                                <img src="{{ URL::asset('build/images/users/avatar-1.jpg') }}" alt="" class="rounded-circle avatar-xxs">
+                                                <img src="<?php echo e(URL::asset('build/images/users/avatar-1.jpg')); ?>" alt="" class="rounded-circle avatar-xxs">
                                             </a>
                                         </div>
                                         <div class="avatar-group-item">
                                             <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Jansh Brown">
-                                                <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt="" class="rounded-circle avatar-xxs">
+                                                <img src="<?php echo e(URL::asset('build/images/users/avatar-2.jpg')); ?>" alt="" class="rounded-circle avatar-xxs">
                                             </a>
                                         </div>
                                         <div class="avatar-group-item">
@@ -543,17 +542,17 @@
                                     <div class="avatar-group">
                                         <div class="avatar-group-item">
                                             <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Stine Nielsen">
-                                                <img src="{{ URL::asset('build/images/users/avatar-1.jpg') }}" alt="" class="rounded-circle avatar-xxs">
+                                                <img src="<?php echo e(URL::asset('build/images/users/avatar-1.jpg')); ?>" alt="" class="rounded-circle avatar-xxs">
                                             </a>
                                         </div>
                                         <div class="avatar-group-item">
                                             <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Jansh Brown">
-                                                <img src="{{ URL::asset('build/images/users/avatar-5.jpg') }}" alt="" class="rounded-circle avatar-xxs">
+                                                <img src="<?php echo e(URL::asset('build/images/users/avatar-5.jpg')); ?>" alt="" class="rounded-circle avatar-xxs">
                                             </a>
                                         </div>
                                         <div class="avatar-group-item">
                                             <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Dan Gibson">
-                                                <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt="" class="rounded-circle avatar-xxs">
+                                                <img src="<?php echo e(URL::asset('build/images/users/avatar-2.jpg')); ?>" alt="" class="rounded-circle avatar-xxs">
                                             </a>
                                         </div>
                                         <div class="avatar-group-item">
@@ -629,35 +628,35 @@
                             <tbody>
                                 <tr>
                                     <td>Acme Inc Install</td>
-                                    <td><img src="{{ URL::asset('build/images/users/avatar-1.jpg') }}" alt="" class="avatar-xs rounded-circle me-2">
+                                    <td><img src="<?php echo e(URL::asset('build/images/users/avatar-1.jpg')); ?>" alt="" class="avatar-xs rounded-circle me-2">
                                         <a href="#javascript: void(0);" class="text-body fw-medium">Donald Risher</a></td>
                                     <td>$96k</td>
                                     <td>Today</td>
                                 </tr>
                                 <tr>
                                     <td>Save lots Stores</td>
-                                    <td><img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}" alt="" class="avatar-xs rounded-circle me-2">
+                                    <td><img src="<?php echo e(URL::asset('build/images/users/avatar-2.jpg')); ?>" alt="" class="avatar-xs rounded-circle me-2">
                                         <a href="#javascript: void(0);" class="text-body fw-medium">Jansh Brown</a></td>
                                     <td>$55.7k</td>
                                     <td>30 Dec 2021</td>
                                 </tr>
                                 <tr>
                                     <td>William PVT</td>
-                                    <td><img src="{{ URL::asset('build/images/users/avatar-7.jpg') }}" alt="" class="avatar-xs rounded-circle me-2">
+                                    <td><img src="<?php echo e(URL::asset('build/images/users/avatar-7.jpg')); ?>" alt="" class="avatar-xs rounded-circle me-2">
                                         <a href="#javascript: void(0);" class="text-body fw-medium">Ayaan Hudda</a></td>
                                     <td>$102k</td>
                                     <td>25 Nov 2021</td>
                                 </tr>
                                 <tr>
                                     <td>Raitech Soft</td>
-                                    <td><img src="{{ URL::asset('build/images/users/avatar-4.jpg') }}" alt="" class="avatar-xs rounded-circle me-2">
+                                    <td><img src="<?php echo e(URL::asset('build/images/users/avatar-4.jpg')); ?>" alt="" class="avatar-xs rounded-circle me-2">
                                         <a href="#javascript: void(0);" class="text-body fw-medium">Julia William</a></td>
                                     <td>$89.5k</td>
                                     <td>20 Sep 2021</td>
                                 </tr>
                                 <tr>
                                     <td>Absternet LLC</td>
-                                    <td><img src="{{ URL::asset('build/images/users/avatar-4.jpg') }}" alt="" class="avatar-xs rounded-circle me-2">
+                                    <td><img src="<?php echo e(URL::asset('build/images/users/avatar-4.jpg')); ?>" alt="" class="avatar-xs rounded-circle me-2">
                                         <a href="#javascript: void(0);" class="text-body fw-medium">Vitoria Rodrigues</a></td>
                                     <td>$89.5k</td>
                                     <td>20 Sep 2021</td>
@@ -669,10 +668,12 @@
             </div><!-- end card -->
         </div><!-- end col -->
     </div><!-- end row -->
-@endsection
-@section('script')
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('script'); ?>
     <!-- apexcharts -->
-    <script src="{{ URL::asset('build/libs/apexcharts/apexcharts.min.js') }}"></script>
-    <script src="{{ URL::asset('build/js/pages/dashboard-crm.init.js') }}"></script>
-    <script src="{{ URL::asset('build/js/app.js') }}"></script>
-@endsection
+    <script src="<?php echo e(URL::asset('build/libs/apexcharts/apexcharts.min.js')); ?>"></script>
+    <script src="<?php echo e(URL::asset('build/js/pages/dashboard-crm.init.js')); ?>"></script>
+    <script src="<?php echo e(URL::asset('build/js/app.js')); ?>"></script>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\OpenServer\domains\turonsoft.uz\resources\views/dashboard-crm.blade.php ENDPATH**/ ?>
