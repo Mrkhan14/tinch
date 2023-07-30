@@ -41,20 +41,66 @@
 
                 <li class="nav-item">
                     <a class="nav-link menu-link"
+                    href="#sidebarSetting"
+                    data-bs-toggle="collapse"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="sidebarSetting">
+                        <i class="ri-layout-grid-line"></i> <span><?php echo app('translator')->get('translation.settingTable'); ?></span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarSetting">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="setting-praduct" class="nav-link"> <?php echo app('translator')->get('translation.settingPraduk'); ?> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="setting-currencies" class="nav-link"> <?php echo app('translator')->get('translation.settingCurrencies'); ?> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="setting-paymentTypes" class="nav-link"> <?php echo app('translator')->get('translation.settingPaymentTypes'); ?> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="setting-costs" class="nav-link"> <?php echo app('translator')->get('translation.settingCosts'); ?> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="setting-guruh" class="nav-link"> <?php echo app('translator')->get('translation.settingGuruh'); ?> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="setting-warehouses" class="nav-link" > <?php echo app('translator')->get('translation.settingWarehouses'); ?> </a>
+                            </li>
+                                <li class="nav-item">
+                                <a href="setting-measurement" class="nav-link"><?php echo app('translator')->get('translation.settingMeasurement'); ?> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link"
                     href="#sidebarUsers"
                     data-bs-toggle="collapse"
                     role="button"
                     aria-expanded="false"
                     aria-controls="sidebarUsers">
-                        <i class="ri-shield-user-line"></i> <span data-key="t-hrTitle">HR</span>
+                        <i class="ri-shield-user-line"></i> <span><?php echo app('translator')->get('translation.hrTitle'); ?></span>
                     </a>
                     <div class="collapse menu-dropdown" id="sidebarUsers">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="hr-users" class="nav-link" data-key="t-hrUsers"> Пользователи </a>
+                                <a href="hr-users" class="nav-link"> <?php echo app('translator')->get('translation.hrUsers'); ?> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="hr-rol" class="nav-link"> <?php echo app('translator')->get('translation.hrRol'); ?> </a>
                             </li>
                         </ul>
                     </div>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="login" class="nav-link">
+                         <i class="mdi mdi-logout"></i> <span><?php echo app('translator')->get('translation.logout'); ?></span>
+                    </a>
                 </li>
 
             </ul>
