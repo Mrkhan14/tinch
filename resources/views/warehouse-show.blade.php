@@ -18,37 +18,48 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="card-title mb-0">@lang('translation.settingCosts')</h5>
-                    <div class="d-flex">
-                        <button
-                            data-bs-toggle="modal"
-                            data-bs-target="#fullscreeexampleModal"
-                            type="button"
-                            class="btn btn-soft-success">
-                            <i class="ri-add-circle-line align-middle me-1"></i>
-                            <span>@lang('translation.cret')</span>
-                        </button>
-                    </div>
+                    <h5 class="card-title mb-0"  data-key="t-warehouses">Складские помещения</h5>
                 </div>
                 <div class="card-body">
                     <table id="scroll-horizontal" class="table nowrap align-middle" style="width:100%">
                         <thead>
                             <tr>
-                                <th>№.</th>
-                                <th>@lang('translation.nameName')</th>
-                                <th>@lang('translation.settingTable')</th>
+                                <th scope="col" style="width: 10px;">
+                                    <div class="form-check">
+                                        <input class="form-check-input fs-15" type="checkbox" id="checkAll" value="option">
+                                    </div>
+                                </th>
+                                <th >SR No.</th>
+                                <th data-key="t-settingPraduk">Продукты</th>
+                                <th data-key="t-Soni">Остальные</th>
+                                <th data-key="t-brak">Дефект</th>
+                                <th data-key="t-settingMeasurement">Единица измерения</th>
+                                <th data-key="t-totalSum">Итого</th>
+                                <th data-key="t-status">Дата</th>
+                                <th data-key="t-settingTable">Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
+                                <th scope="row">
+                                    <div class="form-check">
+                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
+                                    </div>
+                                </th>
                                 <td>01</td>
-                                <td>oylik</td>
+                                <td><a href="warehouse-praducts-show">Post launch reminder/ post list</a></td>
+                                <td>987</td>
+                                <td>2</td>
+                                <td>kg</td>
+                                <td>100 00 000</td>
+                                <td><span class="badge bg-danger">High</span></td>
                                 <td>
                                     <div class="dropdown d-inline-block">
                                         <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             <i class="ri-more-fill align-middle"></i>
                                         </button>
                                         <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
                                             <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
                                             <li>
                                                 <a class="dropdown-item remove-item-btn">
@@ -60,14 +71,25 @@
                                 </td>
                             </tr>
                             <tr>
+                                <th scope="row">
+                                    <div class="form-check">
+                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
+                                    </div>
+                                </th>
                                 <td>02</td>
-                                <td>arenda</td>
+                                <td><a href="warehouse-praducts-show">Additional Calendar</a></td>
+                                <td>800</td>
+                                <td>5</td>
+                                <td>kg</td>
+                                <td>300 00 000 so'm</td>
+                                <td><span class="badge bg-info">Medium</span></td>
                                 <td>
                                     <div class="dropdown d-inline-block">
                                         <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             <i class="ri-more-fill align-middle"></i>
                                         </button>
                                         <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
                                             <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
                                             <li>
                                                 <a class="dropdown-item remove-item-btn">
@@ -79,33 +101,25 @@
                                 </td>
                             </tr>
                             <tr>
+                                <th scope="row">
+                                    <div class="form-check">
+                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
+                                    </div>
+                                </th>
                                 <td>03</td>
-                                <td>Save</td>
+                                    <td><a href="warehouse-praducts-show">Make a creating an account profile</a></td>
+                                <td>675</td>
+                                <td>17</td>
+                                <td>kg</td>
+                                <td>300 00 000 so'm</td>
+                                <td><span class="badge bg-success">Low</span></td>
                                 <td>
                                     <div class="dropdown d-inline-block">
                                         <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             <i class="ri-more-fill align-middle"></i>
                                         </button>
                                         <ul class="dropdown-menu dropdown-menu-end">
-                                            <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
-                                            <li>
-                                                <a class="dropdown-item remove-item-btn">
-                                                    <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>04</td>
-                                <td>Gaz</td>
-                                <td>
-                                    <div class="dropdown d-inline-block">
-                                        <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <i class="ri-more-fill align-middle"></i>
-                                        </button>
-                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
                                             <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
                                             <li>
                                                 <a class="dropdown-item remove-item-btn">
@@ -122,42 +136,6 @@
             </div>
         </div><!--end col-->
     </div><!--end row-->
-
-
-    <!-- modals -->
-    <div class="modal fade" id="fullscreeexampleModal" tabindex="-1" aria-labelledby="fullscreeexampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="fullscreeexampleModalLabel">@lang('translation.modalTitCreate')</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="live-preview">
-                        <div class="row gy-4">
-                            <div class="col-xxl-12 col-md-12">
-                                <div>
-                                    <label for="nameName" class="form-label">@lang('translation.nameName')</label>
-                                    <input type="text" class="form-control" id="nameName">
-                                </div>
-                            </div>
-                             <!--end col-->
-                        </div>
-                        <!--end row-->
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <a   href="javascript:void(0);" class="btn btn-link link-success fw-medium" data-bs-dismiss="modal"
-                        data-key="t-modalBtnClose">
-                        <i class="ri-close-line me-1 align-middle"></i>
-                        @lang('translation.modalBtnClose')
-                    </a>
-                    <button type="button" class="btn btn-primary ">@lang('translation.modalBtnSeve')</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
 @endsection
 @section('script')

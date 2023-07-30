@@ -527,7 +527,7 @@
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="fullscreeexampleModalLabel">Full screen modal</h5>
+                    <h5 class="modal-title"><?php echo app('translator')->get('translation.fullscreeexampleModalLabel'); ?></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -535,7 +535,7 @@
                         <div class="row gy-4">
                             <div class="col-xxl-3 col-md-6">
                                 <div>
-                                    <label for="basiInput" class="form-label">Basic Input</label>
+                                    <label for="basiInput" class="form-label"><?php echo app('translator')->get('translation.label'); ?></label>
                                     <input type="text" class="form-control" id="basiInput">
                                 </div>
                             </div>
@@ -703,9 +703,12 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <a href="javascript:void(0);" class="btn btn-link link-success fw-medium" data-bs-dismiss="modal">
-                        <i class="ri-close-line me-1 align-middle"></i> Close</a>
-                    <button type="button" class="btn btn-primary ">Save changes</button>
+                    <a   href="javascript:void(0);" class="btn btn-link link-success fw-medium" data-bs-dismiss="modal"
+                        data-key="t-modalBtnClose">
+                        <i class="ri-close-line me-1 align-middle"></i>
+                        <?php echo app('translator')->get('translation.modalBtnClose'); ?>
+                    </a>
+                    <button type="button" class="btn btn-primary "><?php echo app('translator')->get('translation.modalBtnSeve'); ?></button>
                 </div>
             </div>
         </div>

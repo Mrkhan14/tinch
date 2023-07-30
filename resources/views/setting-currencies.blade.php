@@ -18,7 +18,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="card-title mb-0"  data-key="t-settingCurrencies">Продукты</h5>
+                    <h5 class="card-title mb-0" >@lang('translation.nameName')</h5>
                     <div class="d-flex">
                         <button
                             data-bs-toggle="modal"
@@ -26,7 +26,7 @@
                             type="button"
                             class="btn btn-soft-success">
                             <i class="ri-add-circle-line align-middle me-1"></i>
-                            <span data-key="t-cret">Создать</span>
+                            <span>@lang('translation.nameName')</span>
                         </button>
                     </div>
                 </div>
@@ -35,12 +35,12 @@
                         <thead>
                             <tr>
                                 <th>№.</th>
-                                <th data-key="t-settingCurrenciesName">Валюта учета</th>
-                                <th data-key="t-settingCurrenciesSimvil">Символ</th>
-                                <th data-key="t-FullName">Полное наименование</th>
-                                <th data-key="t-settingCurrenciesISO">ISO код</th>
-                                <th data-key="t-settingCurrenciesKurs">Курс</th>
-                                <th data-key="t-settingTable">Настройки</th>
+                                <th>@lang('translation.settingCurrenciesName')</th>
+                                <th>@lang('translation.settingCurrenciesSimvil')</th>
+                                <th>@lang('translation.FullName')</th>
+                                <th>@lang('translation.settingCurrenciesISO')</th>
+                                <th>@lang('translation.settingCurrenciesKurs')</th>
+                                <th>@lang('translation.settingTable')</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -133,7 +133,7 @@
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="fullscreeexampleModalLabel" data-key="t-modalTitCreate" >Новый</h5>
+                    <h5 class="modal-title" id="fullscreeexampleModalLabel" data-key="t-modalTitCreate" >@lang('translation.settingCurrenciesName')</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -141,7 +141,7 @@
                         <div class="row gy-4">
                             <div class="col-xxl-6 col-md-12">
                                 <div>
-                                    <label for="settingCurrenciesSimvil" class="form-label" data-key="t-settingCurrenciesSimvil">Символ</label>
+                                    <label for="settingCurrenciesSimvil" class="form-label">@lang('translation.settingCurrenciesSimvil')</label>
                                     <input type="text" class="form-control" id="settingCurrenciesSimvil">
                                 </div>
                             </div>
@@ -149,7 +149,7 @@
 
                             <div class="col-xxl-6 col-md-12">
                                 <div>
-                                    <label for="FullName" class="form-label" data-key="t-FullName">Полное наименование </label>
+                                    <label for="FullName" class="form-label">@lang('translation.FullName') </label>
                                     <input type="text" class="form-control" id="FullName">
                                 </div>
                             </div>
@@ -159,7 +159,7 @@
                                 <div class="form-check form-check-secondary mb-3">
                                     <input class="form-check-input" type="checkbox" id="formCheck7" checked>
                                     <label class="form-check-label" for="formCheck7">
-                                        <span  data-key="t-settingCurrenciesCheckbox">Обратный курс </span>
+                                        <span>@lang('translation.settingCurrenciesCheckbox') </span>
                                     </label>
                                 </div>
                             </div>
@@ -175,7 +175,7 @@
 
                             <div class="col-xxl-6 col-md-12">
                                 <div>
-                                    <label for="Kue" class="form-label"  data-key="t-settingCurrenciesISO">1 SUM = </label>
+                                    <label for="Kue" class="form-label">@lang('translation.settingCurrenciesISO') </label>
                                     <input type="text" class="form-control" id="Kue">
                                 </div>
                             </div>
@@ -187,9 +187,10 @@
                 <div class="modal-footer">
                     <a   href="javascript:void(0);" class="btn btn-link link-success fw-medium" data-bs-dismiss="modal"
                         data-key="t-modalBtnClose">
-                        <i class="ri-close-line me-1 align-middle"></i>Закрывать
+                        <i class="ri-close-line me-1 align-middle"></i>
+                        @lang('translation.modalBtnClose')
                     </a>
-                    <button type="button" class="btn btn-primary "  data-key="t-modalBtnSeve">Save changes</button>
+                    <button type="button" class="btn btn-primary ">@lang('translation.modalBtnSeve')</button>
                 </div>
             </div>
         </div>
