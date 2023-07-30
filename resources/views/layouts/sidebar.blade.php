@@ -41,6 +41,27 @@
 
                 <li class="nav-item">
                     <a class="nav-link menu-link"
+                    href="#sidebarWarehouse"
+                    data-bs-toggle="collapse"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="sidebarWarehouse">
+                        <i class="las la-warehouse"></i> <span>@lang('translation.settingWarehouses')</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarWarehouse">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="warehouse-show" class="nav-link">@lang('translation.warehouses') </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="warehouses-moving" class="nav-link"> @lang('translation.warehousesMoving')  </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link"
                     href="#sidebarSetting"
                     data-bs-toggle="collapse"
                     role="button"
