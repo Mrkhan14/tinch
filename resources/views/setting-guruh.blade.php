@@ -26,7 +26,7 @@
                                 type="button"
                                 class="btn btn-soft-success">
                                 <i class="ri-add-circle-line align-middle me-1"></i>
-                                <span data-key="t-cret">Создать</span>
+                                <span data-key="t-cret">@lang('translation.cret')</span>
                             </button>
                         </div>
                     </div>
@@ -35,8 +35,8 @@
                             <thead>
                                 <tr>
                                     <th>№.</th>
-                                    <th data-key="t-FullName">Наименование</th>
-                                    <th data-key="t-settingTable">Настройки</th>
+                                    <th data-key="t-FullName">@lang('translation.FullName')</th>
+                                    <th data-key="t-settingTable">@lang('translation.settingTable')</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -127,7 +127,7 @@
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="fullscreeexampleModalLabel" data-key="t-modalTitCreate" >Новый</h5>
+                        <h5 class="modal-title" id="fullscreeexampleModalLabel">@lang('translation.modalTitCreate')</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -135,7 +135,7 @@
                             <div class="row gy-4">
                                 <div class="col-xxl-12 col-md-12">
                                     <div>
-                                        <label for="nameName" class="form-label" data-key="t-nameName">Символ</label>
+                                        <label for="nameName" class="form-label">@lang('translation.nameName')</label>
                                         <input type="text" class="form-control" id="nameName">
                                     </div>
                                 </div>
@@ -147,9 +147,10 @@
                     <div class="modal-footer">
                         <a   href="javascript:void(0);" class="btn btn-link link-success fw-medium" data-bs-dismiss="modal"
                             data-key="t-modalBtnClose">
-                            <i class="ri-close-line me-1 align-middle"></i>Закрывать
+                            <i class="ri-close-line me-1 align-middle"></i>
+                            @lang('translation.modalBtnClose')
                         </a>
-                        <button type="button" class="btn btn-primary "  data-key="t-modalBtnSeve">Save changes</button>
+                        <button type="button" class="btn btn-primary ">@lang('translation.modalBtnSeve')</button>
                     </div>
                 </div>
             </div>
