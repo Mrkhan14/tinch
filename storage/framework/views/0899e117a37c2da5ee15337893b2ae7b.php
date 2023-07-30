@@ -5,6 +5,7 @@
 <!--datatable responsive css-->
 <link href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
+
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
 <?php $__env->startComponent('components.breadcrumb'); ?>
@@ -16,7 +17,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="card-title mb-0"  data-key="t-settingWarehouses">Склад</h5>
+                    <h5 class="card-title mb-0"><?php echo app('translator')->get('translation.hrUsers'); ?></h5>
                     <div class="d-flex">
                         <button
                             data-bs-toggle="modal"
@@ -33,15 +34,225 @@
                         <thead>
                             <tr>
                                 <th>№.</th>
-                                <th data-key="t-userName">Имя</th>
-                                <th data-key="t-userFamil">Фамилия</th>
-                                <th data-key="t-telfon">Телефон</th>
-                                <th data-key="t-hrRol">Роль</th>
-                                <th data-key="t-settingTable">Роль</th>
+                                <th data-key="t-userName"><?php echo app('translator')->get('translation.userName'); ?></th>
+                                <th data-key="t-userFamil"><?php echo app('translator')->get('translation.userFamil'); ?></th>
+                                <th data-key="t-telfon"><?php echo app('translator')->get('translation.telfon'); ?></th>
+                                <th data-key="t-hrRol"><?php echo app('translator')->get('translation.hrRol'); ?></th>
+                                <th data-key="t-settingTable"><?php echo app('translator')->get('translation.settingTable'); ?></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
+                                <td>01</td>
+                                <td> User User</td>
+                                <td>Famili</td>
+                                <td>+998 93 000 00 00</td>
+                                <td>Activa</td>
+                                <td>
+                                    <div class="dropdown d-inline-block">
+                                        <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="ri-more-fill align-middle"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
+                                            <li>
+                                                <a class="dropdown-item remove-item-btn">
+                                                    <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr> <tr>
+                                <td>01</td>
+                                <td> User User</td>
+                                <td>Famili</td>
+                                <td>+998 93 000 00 00</td>
+                                <td>Activa</td>
+                                <td>
+                                    <div class="dropdown d-inline-block">
+                                        <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="ri-more-fill align-middle"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
+                                            <li>
+                                                <a class="dropdown-item remove-item-btn">
+                                                    <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr> <tr>
+                                <td>01</td>
+                                <td> User User</td>
+                                <td>Famili</td>
+                                <td>+998 93 000 00 00</td>
+                                <td>Activa</td>
+                                <td>
+                                    <div class="dropdown d-inline-block">
+                                        <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="ri-more-fill align-middle"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
+                                            <li>
+                                                <a class="dropdown-item remove-item-btn">
+                                                    <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr> <tr>
+                                <td>01</td>
+                                <td> User User</td>
+                                <td>Famili</td>
+                                <td>+998 93 000 00 00</td>
+                                <td>Activa</td>
+                                <td>
+                                    <div class="dropdown d-inline-block">
+                                        <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="ri-more-fill align-middle"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
+                                            <li>
+                                                <a class="dropdown-item remove-item-btn">
+                                                    <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr> <tr>
+                                <td>01</td>
+                                <td> User User</td>
+                                <td>Famili</td>
+                                <td>+998 93 000 00 00</td>
+                                <td>Activa</td>
+                                <td>
+                                    <div class="dropdown d-inline-block">
+                                        <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="ri-more-fill align-middle"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
+                                            <li>
+                                                <a class="dropdown-item remove-item-btn">
+                                                    <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr> <tr>
+                                <td>01</td>
+                                <td> User User</td>
+                                <td>Famili</td>
+                                <td>+998 93 000 00 00</td>
+                                <td>Activa</td>
+                                <td>
+                                    <div class="dropdown d-inline-block">
+                                        <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="ri-more-fill align-middle"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
+                                            <li>
+                                                <a class="dropdown-item remove-item-btn">
+                                                    <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr> <tr>
+                                <td>01</td>
+                                <td> User User</td>
+                                <td>Famili</td>
+                                <td>+998 93 000 00 00</td>
+                                <td>Activa</td>
+                                <td>
+                                    <div class="dropdown d-inline-block">
+                                        <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="ri-more-fill align-middle"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
+                                            <li>
+                                                <a class="dropdown-item remove-item-btn">
+                                                    <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr> <tr>
+                                <td>01</td>
+                                <td> User User</td>
+                                <td>Famili</td>
+                                <td>+998 93 000 00 00</td>
+                                <td>Activa</td>
+                                <td>
+                                    <div class="dropdown d-inline-block">
+                                        <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="ri-more-fill align-middle"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
+                                            <li>
+                                                <a class="dropdown-item remove-item-btn">
+                                                    <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr> <tr>
+                                <td>01</td>
+                                <td> User User</td>
+                                <td>Famili</td>
+                                <td>+998 93 000 00 00</td>
+                                <td>Activa</td>
+                                <td>
+                                    <div class="dropdown d-inline-block">
+                                        <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="ri-more-fill align-middle"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
+                                            <li>
+                                                <a class="dropdown-item remove-item-btn">
+                                                    <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr> <tr>
+                                <td>01</td>
+                                <td> User User</td>
+                                <td>Famili</td>
+                                <td>+998 93 000 00 00</td>
+                                <td>Activa</td>
+                                <td>
+                                    <div class="dropdown d-inline-block">
+                                        <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="ri-more-fill align-middle"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
+                                            <li>
+                                                <a class="dropdown-item remove-item-btn">
+                                                    <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr> <tr>
                                 <td>01</td>
                                 <td> User User</td>
                                 <td>Famili</td>
@@ -83,35 +294,35 @@
                         <div class="row gy-4">
                             <div class="col-xxl-12 col-md-12">
                                 <div>
-                                    <label for="userName" class="form-label" data-key="t-userName">Имя</label>
+                                    <label for="userName" class="form-label"><?php echo app('translator')->get('translation.userName'); ?></label>
                                     <input type="text" class="form-control" id="userName">
                                 </div>
                             </div>
                              <!--end col-->
                              <div class="col-xxl-12 col-md-12">
                                 <div>
-                                    <label for="userFamil" class="form-label" data-key="t-userFamil">Фамилия</label>
+                                    <label for="userFamil" class="form-label"><?php echo app('translator')->get('translation.userFamil'); ?></label>
                                     <input type="text" class="form-control" id="userFamil">
                                 </div>
                             </div>
                              <!--end col-->
                              <div class="col-xxl-12 col-md-12">
                                 <div>
-                                    <label for="telfon" class="form-label" data-key="t-telfon">Телефон</label>
+                                    <label for="telfon" class="form-label"><?php echo app('translator')->get('translation.telfon'); ?></label>
                                     <input type="text" class="form-control" id="telfon">
                                 </div>
                             </div>
                              <!--end col-->
                              <div class="col-xxl-12 col-md-12">
                                 <div>
-                                    <label for="parol" class="form-label" data-key="t-parol">Пароль</label>
+                                    <label for="parol" class="form-label" ><?php echo app('translator')->get('translation.parol'); ?></label>
                                     <input type="text" class="form-control" id="parol">
                                 </div>
                             </div>
                              <!--end col-->
                              <div class="col-xxl-12 col-md-12">
                                 <div>
-                                    <label for="hrRol" class="form-label" data-key="t-hrRol">Роль</label>
+                                    <label for="hrRol" class="form-label"><?php echo app('translator')->get('translation.hrRol'); ?></label>
                                     <select class="form-select mb-3" aria-label="Default select example">
                                         <option selected>-----</option>
                                         <option value="1">One</option>
@@ -152,17 +363,16 @@
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('script'); ?>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
-<script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+<script src="<?php echo e(URL::asset('build/js/pages/jquery-3.6.0.min.js')); ?>"></script>
+<script src="<?php echo e(URL::asset('build/js/pages/dataTables.min.js')); ?>"></script>
+<script src="<?php echo e(URL::asset('build/js/pages/dataTables.bootstrap5.min.js')); ?>"></script>
+<script src="<?php echo e(URL::asset('build/js/pages/dataTables.responsive.min.js')); ?>"></script>
+<script src="<?php echo e(URL::asset('build/js/pages/dataTables.buttons.min.js')); ?>"></script>
+<script src="<?php echo e(URL::asset('build/js/pages/buttons.print.min.js')); ?>"></script>
+<!-- <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script> -->
 
 <script src="<?php echo e(URL::asset('build/js/pages/datatables.init.js')); ?>"></script>
 
