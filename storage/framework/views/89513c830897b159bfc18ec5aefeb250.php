@@ -59,16 +59,16 @@
                         <table id="scroll-horizontal" class="table nowrap align-middle" style="width:100%">
                             <thead>
                                 <tr>
-                                    <th data-key="t-Склад">Склад</th>
-                                    <th data-key="t-Soni">Остальные</th>
-                                    <th data-key="t-brak">Дефект</th>
-                                    <th data-key="t-settingCurrencies">Валюты</th>
-                                    <th data-key="t-settingCurrenciesKurs">Курс</th>
+                                    <th><?php echo app('translator')->get('translation.settingWarehouses'); ?></th>
+                                    <th><?php echo app('translator')->get('translation.Soni'); ?></thdata-key=>
+                                    <th><?php echo app('translator')->get('translation.brak'); ?></thdata-key=>
+                                    <th><?php echo app('translator')->get('translation.settingCurrencies'); ?></thdata-key=>
+                                    <th><?php echo app('translator')->get('translation.settingCurrenciesKurs'); ?></thdata-key=>
 
-                                    <th data-key="t-expenses">Расходов</th>
-                                    <th data-key="t-ProductArrivalPrice">Mahsulut kelish narxi</th>
-                                    <th data-key="t-letProductBeTaror">Mahsulot taror bo'lshi </th>
-                                    <th data-key="t-totalSum">Итого</th>
+                                    <th><?php echo app('translator')->get('translation.expenses'); ?></thdata-key=>
+                                    <th><?php echo app('translator')->get('translation.ProductArrivalPrice'); ?></thdata-key=>
+                                    <th><?php echo app('translator')->get('translation.letProductBeTaror'); ?></th>
+                                    <th><?php echo app('translator')->get('translation.totalSum'); ?></th>
 
                                 </tr>
                             </thead>
