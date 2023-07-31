@@ -18,7 +18,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="card-title mb-0">@lang('translation.settingMeasurement')</h5>
+                    <h5 class="card-title mb-0"  data-key="t-bankAccount">Номер банковского счета</h5>
                     <div class="d-flex">
                         <button
                             data-bs-toggle="modal"
@@ -26,7 +26,7 @@
                             type="button"
                             class="btn btn-soft-success">
                             <i class="ri-add-circle-line align-middle me-1"></i>
-                            <span data-key="t-cret">@lang('translation.cret')</span>
+                            <span data-key="t-cret">Создать</span>
                         </button>
                     </div>
                 </div>
@@ -35,16 +35,22 @@
                         <thead>
                             <tr>
                                 <th>№.</th>
-                                <th data-key="t-FullName">@lang('translation.FullName')</th>
-                                <th data-key="t-nameName">@lang('translation.nameName')</th>
-                                <th data-key="t-settingTable">@lang('translation.settingTable')</th>
+                                <th data-key="t-user">Пользователь</th>
+                                <th data-key="t-FullName">Наименование</th>
+                                <th data-key="t-MFO">МФО</th>
+                                <th data-key="t-NumberBank">Number Bank</th>
+                                <th data-key="t-date">Дата</th>
+                                <th data-key="t-settingTable">Роль</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>01</td>
-                                <td>kg</td>
-                                <td>Kilogram</td>
+                                <td>User Admin </td>
+                                <td>Asaka Banl</td>
+                                <td>055 666 666</td>
+                                <td>125 147 258 369 </td>
+                                <td>21.02.2023</td>
                                 <td>
                                     <div class="dropdown d-inline-block">
                                         <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -68,13 +74,11 @@
         </div><!--end col-->
     </div><!--end row-->
 
-
-    <!-- modals -->
     <div class="modal fade" id="fullscreeexampleModal" tabindex="-1" aria-labelledby="fullscreeexampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="fullscreeexampleModalLabel" data-key="t-modalTitCreate" >@lang('translation.modalTitCreate')</h5>
+                    <h5 class="modal-title" id="fullscreeexampleModalLabel" data-key="t-modalTitCreate" >Новый</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -82,15 +86,22 @@
                         <div class="row gy-4">
                             <div class="col-xxl-12 col-md-12">
                                 <div>
-                                    <label for="nameName1" class="form-label" data-key="t-FullName">@lang('translation.FullName')</label>
-                                    <input type="text" class="form-control" id="nameName1">
+                                    <label for="userName" class="form-label" data-key="t-FullName">Наименование</label>
+                                    <input type="text" class="form-control" id="userName">
                                 </div>
                             </div>
                              <!--end col-->
                              <div class="col-xxl-12 col-md-12">
                                 <div>
-                                    <label for="nameName" class="form-label" data-key="t-nameName">@lang('translation.nameName')</label>
-                                    <input type="text" class="form-control" id="nameName">
+                                    <label for="userFamil" class="form-label" data-key="t-MFO">МФО</label>
+                                    <input type="text" class="form-control" id="userFamil">
+                                </div>
+                            </div>
+                             <!--end col-->
+                             <div class="col-xxl-12 col-md-12">
+                                <div>
+                                    <label for="telfon" class="form-label" data-key="t-bankAccount">Номер банковского счета</label>
+                                    <input type="text" class="form-control" id="telfon">
                                 </div>
                             </div>
                              <!--end col-->
@@ -101,15 +112,13 @@
                 <div class="modal-footer">
                     <a   href="javascript:void(0);" class="btn btn-link link-success fw-medium" data-bs-dismiss="modal"
                         data-key="t-modalBtnClose">
-                        <i class="ri-close-line me-1 align-middle"></i>
-                        @lang('translation.modalBtnClose')
+                        <i class="ri-close-line me-1 align-middle"></i>Закрывать
                     </a>
-                    <button type="button" class="btn btn-primary ">@lang('translation.modalBtnSeve')</button>
+                    <button type="button" class="btn btn-primary "  data-key="t-modalBtnSeve">Save changes</button>
                 </div>
             </div>
         </div>
     </div>
-
 
 @endsection
 @section('script')

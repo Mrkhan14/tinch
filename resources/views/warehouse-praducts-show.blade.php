@@ -2,10 +2,10 @@
 @section('title') @lang('translation.datatables') @endsection
 @section('css')
 <!--datatable css-->
-<link href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+<link href="{{ URL::asset('build/css/dataTables.bootstrap5.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
 <!--datatable responsive css-->
-<link href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
+<link href="{{ URL::asset('build/css/responsive.bootstrap.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
+<link href="{{ URL::asset('build/css/buttons.dataTables.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
 
 @endsection
 @section('content')
@@ -60,16 +60,16 @@
                         <table id="scroll-horizontal" class="table nowrap align-middle" style="width:100%">
                             <thead>
                                 <tr>
-                                    <th data-key="t-Склад">Склад</th>
-                                    <th data-key="t-Soni">Остальные</th>
-                                    <th data-key="t-brak">Дефект</th>
-                                    <th data-key="t-settingCurrencies">Валюты</th>
-                                    <th data-key="t-settingCurrenciesKurs">Курс</th>
+                                    <th>@lang('translation.settingWarehouses')</th>
+                                    <th>@lang('translation.Soni')</thdata-key=>
+                                    <th>@lang('translation.brak')</thdata-key=>
+                                    <th>@lang('translation.settingCurrencies')</thdata-key=>
+                                    <th>@lang('translation.settingCurrenciesKurs')</thdata-key=>
 
-                                    <th data-key="t-expenses">Расходов</th>
-                                    <th data-key="t-ProductArrivalPrice">Mahsulut kelish narxi</th>
-                                    <th data-key="t-letProductBeTaror">Mahsulot taror bo'lshi </th>
-                                    <th data-key="t-totalSum">Итого</th>
+                                    <th>@lang('translation.expenses')</thdata-key=>
+                                    <th>@lang('translation.ProductArrivalPrice')</thdata-key=>
+                                    <th>@lang('translation.letProductBeTaror')</th>
+                                    <th>@lang('translation.totalSum')</th>
 
                                 </tr>
                             </thead>

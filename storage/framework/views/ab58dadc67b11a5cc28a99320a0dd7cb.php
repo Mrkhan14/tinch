@@ -41,6 +41,54 @@
 
                 <li class="nav-item">
                     <a class="nav-link menu-link"
+                    href="#transactions"
+                    data-bs-toggle="collapse"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="transactions">
+
+                        <i class="lab la-cc-paypal"></i> <span data-key="t-transactions">Транзакции</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="transactions">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="transactions-payments" class="nav-link" data-key="t-payments">Платежи</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="transactions-expenses" class="nav-link" data-key="t-expenses">Расходов</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="transactions-bank-account" class="nav-link" data-key="t-bankAccount">Платежи</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link"
+                    href="#counterparties"
+                    data-bs-toggle="collapse"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="counterparties">
+
+                        <i class="ri-account-pin-box-line"></i> <span data-key="t-counterparties">Контрагенты</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="counterparties">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="counterparties-provider" class="nav-link"> <?php echo app('translator')->get('translation.provider'); ?> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="counterparties-cilent" class="nav-link"> <?php echo app('translator')->get('translation.client'); ?> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link"
                     href="#sidebarWarehouse"
                     data-bs-toggle="collapse"
                     role="button"
