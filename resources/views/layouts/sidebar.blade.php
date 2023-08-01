@@ -47,18 +47,18 @@
                     aria-expanded="false"
                     aria-controls="transactions">
 
-                        <i class="lab la-cc-paypal"></i> <span data-key="t-transactions">Транзакции</span>
+                        <i class="lab la-cc-paypal"></i> <span>@lang('translation.transactions')</span>
                     </a>
                     <div class="collapse menu-dropdown" id="transactions">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="transactions-payments" class="nav-link" data-key="t-payments">Платежи</a>
+                                <a href="transactions-payments" class="nav-link">@lang('translation.payments')</a>
                             </li>
                             <li class="nav-item">
-                                <a href="transactions-expenses" class="nav-link" data-key="t-expenses">Расходов</a>
+                                <a href="transactions-expenses" class="nav-link">@lang('translation.expenses')</a>
                             </li>
                             <li class="nav-item">
-                                <a href="transactions-bank-account" class="nav-link" data-key="t-bankAccount">Платежи</a>
+                                <a href="transactions-bank-account" class="nav-link">@lang('translation.bankAccount')</a>
                             </li>
 
                         </ul>
@@ -73,7 +73,7 @@
                     aria-expanded="false"
                     aria-controls="counterparties">
 
-                        <i class="ri-account-pin-box-line"></i> <span data-key="t-counterparties">Контрагенты</span>
+                        <i class="ri-account-pin-box-line"></i> <span>@lang('translation.counterparties')</span>
                     </a>
                     <div class="collapse menu-dropdown" id="counterparties">
                         <ul class="nav nav-sm flex-column">

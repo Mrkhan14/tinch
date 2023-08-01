@@ -1,10 +1,10 @@
 <?php $__env->startSection('title'); ?> <?php echo app('translator')->get('translation.datatables'); ?> <?php $__env->stopSection(); ?>
 <?php $__env->startSection('css'); ?>
 <!--datatable css-->
-<link href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo e(URL::asset('build/css/dataTables.bootstrap5.min.css')); ?>" id="app-style" rel="stylesheet" type="text/css" />
 <!--datatable responsive css-->
-<link href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo e(URL::asset('build/css/responsive.bootstrap.min.css')); ?>" id="app-style" rel="stylesheet" type="text/css" />
+<link href="<?php echo e(URL::asset('build/css/buttons.dataTables.min.css')); ?>" id="app-style" rel="stylesheet" type="text/css" />
 
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
@@ -21,7 +21,7 @@
                     126 000 - 120 000
                 </h5>
                 <p class="text-muted mb-0">
-                    <b data-key="t-rest">Остальные</b>
+                    <b><?php echo app('translator')->get('translation.rest'); ?></b>
                     <span class="fw-medium">6 000 UZB</span>
                 </p>
             </a>
@@ -34,7 +34,7 @@
                     171 - 151
                 </h5>
                 <p class="text-muted mb-0">
-                    <b data-key="t-rest">Остальные</b>
+                    <b><?php echo app('translator')->get('translation.rest'); ?></b>
                     <span class="fw-medium">20  USD</span>
                 </p>
             </a>
@@ -46,30 +46,30 @@
     <div class="col-lg-12">
         <div class="card">
             <div class="card-header d-flex justify-content-start align-items-center">
-                <a href="counterparties-provider.html" class="me-4">
+                <a href="counterparties-cilent" class="me-4">
                     <button type="button" class="btn btn-primary waves-effect waves-light">
                         <i class="las la-angle-double-left"></i>
                     </button>
                 </a>
                 <h5 class="card-title mb-0  pe-4" >
-                    <span  data-key="t-client"></span>:
+                    <span><?php echo app('translator')->get('translation.client'); ?></span>:
                     <span><b>Tinch</b></span>
                 </h5>
                 <div>
-                    <span data-key="t-telfon"></span>:
+                    <span><?php echo app('translator')->get('translation.telfon'); ?></span>:
                     <span><b>+998 (99) 000 00 00</b></span>
                 </div>
             </div>
             <div class="card-body">
                 <ul class="nav nav-pills nav-justified mb-3" role="tablist">
                     <li class="nav-item waves-effect waves-light">
-                        <a data-key="t-settingPraduk" class="nav-link active" data-bs-toggle="tab" href="#pill-justified-home-1" role="tab">
-                            Продукты
+                        <a  class="nav-link active" data-bs-toggle="tab" href="#pill-justified-home-1" role="tab">
+                            <?php echo app('translator')->get('translation.settingPraduk'); ?>
                         </a>
                     </li>
                     <li class="nav-item waves-effect waves-light">
-                        <a data-key="t-payments" class="nav-link" data-bs-toggle="tab" href="#pill-justified-profile-1" role="tab">
-                            Платежи
+                        <a  class="nav-link" data-bs-toggle="tab" href="#pill-justified-profile-1" role="tab">
+                            <?php echo app('translator')->get('translation.payments'); ?>
                         </a>
                     </li>
                 </ul>
@@ -80,17 +80,17 @@
                             <thead>
                                 <tr>
                                     <th>№.</th>
-                                    <th data-key="t-date">Дата</th>
-                                    <th data-key="t-user">Пользователь</th>
-                                    <th data-key="t-settingPraduk">Продукты</th>
-                                    <th data-key="t-settingMeasurement">Ед. изм</th>
-                                    <th data-key="t-settingWarehouses">Склад</th>
-                                    <th data-key="t-Miqdor">Количество</th>
-                                    <th data-key="t-settingCurrencies">Валюты</th>
-                                    <th data-key="t-settingCurrenciesKurs">Курс</th>
-                                    <th data-key="t-discounts">Скидки</th>
-                                    <th data-key="t-priceru">Цена</th>
-                                    <th data-key="t-totalSum">Итого</th>
+                                    <th><?php echo app('translator')->get('translation.date'); ?></th>
+                                    <th><?php echo app('translator')->get('translation.user'); ?></th>
+                                    <th><?php echo app('translator')->get('translation.settingPraduk'); ?></th>
+                                    <th><?php echo app('translator')->get('translation.settingMeasurement'); ?></th>
+                                    <th><?php echo app('translator')->get('translation.settingWarehouses'); ?></th>
+                                    <th><?php echo app('translator')->get('translation.Miqdor'); ?></th>
+                                    <th><?php echo app('translator')->get('translation.settingCurrencies'); ?></th>
+                                    <th><?php echo app('translator')->get('translation.settingCurrenciesKurs'); ?></th>
+                                    <th><?php echo app('translator')->get('translation.discounts'); ?></th>
+                                    <th><?php echo app('translator')->get('translation.priceru'); ?></th>
+                                    <th><?php echo app('translator')->get('translation.totalSum'); ?></th>
                                 </tr>
                             </thead>
                             <tbody>

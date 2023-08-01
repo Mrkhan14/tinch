@@ -1,10 +1,10 @@
 <?php $__env->startSection('title'); ?> <?php echo app('translator')->get('translation.datatables'); ?> <?php $__env->stopSection(); ?>
 <?php $__env->startSection('css'); ?>
 <!--datatable css-->
-<link href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo e(URL::asset('build/css/dataTables.bootstrap5.min.css')); ?>" id="app-style" rel="stylesheet" type="text/css" />
 <!--datatable responsive css-->
-<link href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo e(URL::asset('build/css/responsive.bootstrap.min.css')); ?>" id="app-style" rel="stylesheet" type="text/css" />
+<link href="<?php echo e(URL::asset('build/css/buttons.dataTables.min.css')); ?>" id="app-style" rel="stylesheet" type="text/css" />
 
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
@@ -17,7 +17,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="card-title mb-0"  data-key="t-warehouses">Складские помещения</h5>
+                    <h5 class="card-title mb-0"><?php echo app('translator')->get('translation.warehouses'); ?></h5>
                 </div>
                 <div class="card-body">
                     <table id="scroll-horizontal" class="table nowrap align-middle" style="width:100%">
@@ -29,13 +29,13 @@
                                     </div>
                                 </th>
                                 <th >SR No.</th>
-                                <th data-key="t-settingPraduk">Продукты</th>
-                                <th data-key="t-Soni">Остальные</th>
-                                <th data-key="t-brak">Дефект</th>
-                                <th data-key="t-settingMeasurement">Единица измерения</th>
-                                <th data-key="t-totalSum">Итого</th>
-                                <th data-key="t-status">Дата</th>
-                                <th data-key="t-settingTable">Action</th>
+                                <th><?php echo app('translator')->get('translation.settingPraduk'); ?></th>
+                                <th><?php echo app('translator')->get('translation.Soni'); ?></th>
+                                <th><?php echo app('translator')->get('translation.brak'); ?></th>
+                                <th><?php echo app('translator')->get('translation.settingMeasurement'); ?></thdata-key=>
+                                <th><?php echo app('translator')->get('translation.totalSum'); ?></th>
+                                <th><?php echo app('translator')->get('translation.status'); ?></th>
+                                <th><?php echo app('translator')->get('translation.settingTable'); ?></th>
                             </tr>
                         </thead>
                         <tbody>

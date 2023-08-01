@@ -1,18 +1,17 @@
-@extends('layouts.master')
-@section('title') @lang('translation.datatables') @endsection
-@section('css')
+<?php $__env->startSection('title'); ?> <?php echo app('translator')->get('translation.datatables'); ?> <?php $__env->stopSection(); ?>
+<?php $__env->startSection('css'); ?>
 <!--datatable css-->
-<link href="{{ URL::asset('build/css/dataTables.bootstrap5.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
+<link href="<?php echo e(URL::asset('build/css/dataTables.bootstrap5.min.css')); ?>" id="app-style" rel="stylesheet" type="text/css" />
 <!--datatable responsive css-->
-<link href="{{ URL::asset('build/css/responsive.bootstrap.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
-<link href="{{ URL::asset('build/css/buttons.dataTables.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
+<link href="<?php echo e(URL::asset('build/css/responsive.bootstrap.min.css')); ?>" id="app-style" rel="stylesheet" type="text/css" />
+<link href="<?php echo e(URL::asset('build/css/buttons.dataTables.min.css')); ?>" id="app-style" rel="stylesheet" type="text/css" />
 
-@endsection
-@section('content')
-@component('components.breadcrumb')
-@slot('li_1') Tables @endslot
-@slot('title')Datatables @endslot
-@endcomponent
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
+<?php $__env->startComponent('components.breadcrumb'); ?>
+<?php $__env->slot('li_1'); ?> Tables <?php $__env->endSlot(); ?>
+<?php $__env->slot('title'); ?>Datatables <?php $__env->endSlot(); ?>
+<?php echo $__env->renderComponent(); ?>
 
     <div class="row d-flex justify-content-center">
         <div class="col-lg-3 col-sm-12">
@@ -22,7 +21,7 @@
                         126 000 - 120 000
                     </h5>
                     <p class="text-muted mb-0">
-                        <b>@lang('translation.rest')</b>
+                        <b><?php echo app('translator')->get('translation.rest'); ?></b>
                         <span class="fw-medium">6 000 UZB</span>
                     </p>
                 </a>
@@ -35,7 +34,7 @@
                         171 - 151
                     </h5>
                     <p class="text-muted mb-0">
-                        <b>@lang('translation.rest')</b>
+                        <b><?php echo app('translator')->get('translation.rest'); ?></b>
                         <span class="fw-medium">20  USD</span>
                     </p>
                 </a>
@@ -53,11 +52,11 @@
                         </button>
                     </a>
                     <h5 class="card-title mb-0  pe-4" >
-                        <span >@lang('translation.nameCompany')</span>:
+                        <span ><?php echo app('translator')->get('translation.nameCompany'); ?></span>:
                         <span><b>Tinch</b></span>
                     </h5>
                     <div>
-                        <span>@lang('translation.telfon')</span>:
+                        <span><?php echo app('translator')->get('translation.telfon'); ?></span>:
                         <span><b>+998 (99) 000 00 00</b></span>
                     </div>
                 </div>
@@ -65,12 +64,12 @@
                     <ul class="nav nav-pills nav-justified mb-3" role="tablist">
                         <li class="nav-item waves-effect waves-light">
                             <a class="nav-link active" data-bs-toggle="tab" href="#pill-justified-home-1" role="tab">
-                                @lang('translation.settingPraduk')
+                                <?php echo app('translator')->get('translation.settingPraduk'); ?>
                             </a>
                         </li>
                         <li class="nav-item waves-effect waves-light">
                             <a class="nav-link" data-bs-toggle="tab" href="#pill-justified-profile-1" role="tab">
-                                @lang('translation.payments')
+                                <?php echo app('translator')->get('translation.payments'); ?>
                             </a>
                         </li>
                     </ul>
@@ -81,16 +80,16 @@
                                 <thead>
                                     <tr>
                                         <th>№.</th>
-                                        <th> @lang('translation.date')</th>
-                                        <th> @lang('translation.user')</th>
-                                        <th> @lang('translation.settingPraduk')</th>
-                                        <th> @lang('translation.settingMeasurement')</th>
-                                        <th> @lang('translation.settingWarehouses')</th>
-                                        <th> @lang('translation.Miqdor')</th>
-                                        <th> @lang('translation.settingCurrencies')</th>
-                                        <th> @lang('translation.settingCurrenciesKurs')</th>
-                                        <th> @lang('translation.priceru')</th>
-                                        <th> @lang('translation.totalSum')</th>
+                                        <th> <?php echo app('translator')->get('translation.date'); ?></th>
+                                        <th> <?php echo app('translator')->get('translation.user'); ?></th>
+                                        <th> <?php echo app('translator')->get('translation.settingPraduk'); ?></th>
+                                        <th> <?php echo app('translator')->get('translation.settingMeasurement'); ?></th>
+                                        <th> <?php echo app('translator')->get('translation.settingWarehouses'); ?></th>
+                                        <th> <?php echo app('translator')->get('translation.Miqdor'); ?></th>
+                                        <th> <?php echo app('translator')->get('translation.settingCurrencies'); ?></th>
+                                        <th> <?php echo app('translator')->get('translation.settingCurrenciesKurs'); ?></th>
+                                        <th> <?php echo app('translator')->get('translation.priceru'); ?></th>
+                                        <th> <?php echo app('translator')->get('translation.totalSum'); ?></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -141,12 +140,12 @@
                                 <thead>
                                     <tr>
                                         <th>№.</th>
-                                        <th>@lang('translation.date')</th>
-                                        <th>@lang('translation.user')</th>
-                                        <th>@lang('translation.typePayment')</th>
-                                        <th>@lang('translation.settingCurrencies')</th>
-                                        <th>@lang('translation.settingCurrenciesKurs')</th>
-                                        <th>@lang('translation.priceru')</th>
+                                        <th><?php echo app('translator')->get('translation.date'); ?></th>
+                                        <th><?php echo app('translator')->get('translation.user'); ?></th>
+                                        <th><?php echo app('translator')->get('translation.typePayment'); ?></th>
+                                        <th><?php echo app('translator')->get('translation.settingCurrencies'); ?></th>
+                                        <th><?php echo app('translator')->get('translation.settingCurrenciesKurs'); ?></th>
+                                        <th><?php echo app('translator')->get('translation.priceru'); ?></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -177,23 +176,25 @@
         </div><!--end col-->
     </div><!--end row-->
 
-@endsection
-@section('script')
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('script'); ?>
 
-<script src="{{ URL::asset('build/js/pages/jquery-3.6.0.min.js') }}"></script>
-<script src="{{ URL::asset('build/js/pages/dataTables.min.js') }}"></script>
-<script src="{{ URL::asset('build/js/pages/dataTables.bootstrap5.min.js') }}"></script>
-<script src="{{ URL::asset('build/js/pages/dataTables.responsive.min.js') }}"></script>
-<script src="{{ URL::asset('build/js/pages/dataTables.buttons.min.js') }}"></script>
-<script src="{{ URL::asset('build/js/pages/buttons.print.min.js') }}"></script>
+<script src="<?php echo e(URL::asset('build/js/pages/jquery-3.6.0.min.js')); ?>"></script>
+<script src="<?php echo e(URL::asset('build/js/pages/dataTables.min.js')); ?>"></script>
+<script src="<?php echo e(URL::asset('build/js/pages/dataTables.bootstrap5.min.js')); ?>"></script>
+<script src="<?php echo e(URL::asset('build/js/pages/dataTables.responsive.min.js')); ?>"></script>
+<script src="<?php echo e(URL::asset('build/js/pages/dataTables.buttons.min.js')); ?>"></script>
+<script src="<?php echo e(URL::asset('build/js/pages/buttons.print.min.js')); ?>"></script>
 <!-- <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script> -->
 
-<script src="{{ URL::asset('build/js/pages/datatables.init.js') }}"></script>
+<script src="<?php echo e(URL::asset('build/js/pages/datatables.init.js')); ?>"></script>
 
-<script src="{{ URL::asset('build/js/app.js') }}"></script>
+<script src="<?php echo e(URL::asset('build/js/app.js')); ?>"></script>
 
-@endsection
+<?php $__env->stopSection(); ?>
 
+
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\OpenServer\domains\turonsoft.uz\resources\views/counterparties-provider-profil.blade.php ENDPATH**/ ?>
