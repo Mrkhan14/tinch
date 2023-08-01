@@ -22,7 +22,7 @@
                     126 000 - 120 000
                 </h5>
                 <p class="text-muted mb-0">
-                    <b data-key="t-rest">Остальные</b>
+                    <b>@lang('translation.rest')</b>
                     <span class="fw-medium">6 000 UZB</span>
                 </p>
             </a>
@@ -35,7 +35,7 @@
                     171 - 151
                 </h5>
                 <p class="text-muted mb-0">
-                    <b data-key="t-rest">Остальные</b>
+                    <b>@lang('translation.rest')</b>
                     <span class="fw-medium">20  USD</span>
                 </p>
             </a>
@@ -47,30 +47,30 @@
     <div class="col-lg-12">
         <div class="card">
             <div class="card-header d-flex justify-content-start align-items-center">
-                <a href="counterparties-provider.html" class="me-4">
+                <a href="counterparties-cilent" class="me-4">
                     <button type="button" class="btn btn-primary waves-effect waves-light">
                         <i class="las la-angle-double-left"></i>
                     </button>
                 </a>
                 <h5 class="card-title mb-0  pe-4" >
-                    <span  data-key="t-client"></span>:
+                    <span>@lang('translation.client')</span>:
                     <span><b>Tinch</b></span>
                 </h5>
                 <div>
-                    <span data-key="t-telfon"></span>:
+                    <span>@lang('translation.telfon')</span>:
                     <span><b>+998 (99) 000 00 00</b></span>
                 </div>
             </div>
             <div class="card-body">
                 <ul class="nav nav-pills nav-justified mb-3" role="tablist">
                     <li class="nav-item waves-effect waves-light">
-                        <a data-key="t-settingPraduk" class="nav-link active" data-bs-toggle="tab" href="#pill-justified-home-1" role="tab">
-                            Продукты
+                        <a  class="nav-link active" data-bs-toggle="tab" href="#pill-justified-home-1" role="tab">
+                            @lang('translation.settingPraduk')
                         </a>
                     </li>
                     <li class="nav-item waves-effect waves-light">
-                        <a data-key="t-payments" class="nav-link" data-bs-toggle="tab" href="#pill-justified-profile-1" role="tab">
-                            Платежи
+                        <a  class="nav-link" data-bs-toggle="tab" href="#pill-justified-profile-1" role="tab">
+                            @lang('translation.payments')
                         </a>
                     </li>
                 </ul>
@@ -81,17 +81,17 @@
                             <thead>
                                 <tr>
                                     <th>№.</th>
-                                    <th data-key="t-date">Дата</th>
-                                    <th data-key="t-user">Пользователь</th>
-                                    <th data-key="t-settingPraduk">Продукты</th>
-                                    <th data-key="t-settingMeasurement">Ед. изм</th>
-                                    <th data-key="t-settingWarehouses">Склад</th>
-                                    <th data-key="t-Miqdor">Количество</th>
-                                    <th data-key="t-settingCurrencies">Валюты</th>
-                                    <th data-key="t-settingCurrenciesKurs">Курс</th>
-                                    <th data-key="t-discounts">Скидки</th>
-                                    <th data-key="t-priceru">Цена</th>
-                                    <th data-key="t-totalSum">Итого</th>
+                                    <th>@lang('translation.date')</th>
+                                    <th>@lang('translation.user')</th>
+                                    <th>@lang('translation.settingPraduk')</th>
+                                    <th>@lang('translation.settingMeasurement')</th>
+                                    <th>@lang('translation.settingWarehouses')</th>
+                                    <th>@lang('translation.Miqdor')</th>
+                                    <th>@lang('translation.settingCurrencies')</th>
+                                    <th>@lang('translation.settingCurrenciesKurs')</th>
+                                    <th>@lang('translation.discounts')</th>
+                                    <th>@lang('translation.priceru')</th>
+                                    <th>@lang('translation.totalSum')</th>
                                 </tr>
                             </thead>
                             <tbody>

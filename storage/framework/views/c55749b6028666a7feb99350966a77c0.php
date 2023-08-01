@@ -1,10 +1,10 @@
 <?php $__env->startSection('title'); ?> <?php echo app('translator')->get('translation.datatables'); ?> <?php $__env->stopSection(); ?>
 <?php $__env->startSection('css'); ?>
 <!--datatable css-->
-<link href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo e(URL::asset('build/css/dataTables.bootstrap5.min.css')); ?>" id="app-style" rel="stylesheet" type="text/css" />
 <!--datatable responsive css-->
-<link href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo e(URL::asset('build/css/responsive.bootstrap.min.css')); ?>" id="app-style" rel="stylesheet" type="text/css" />
+<link href="<?php echo e(URL::asset('build/css/buttons.dataTables.min.css')); ?>" id="app-style" rel="stylesheet" type="text/css" />
 
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
@@ -17,7 +17,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="card-title mb-0"  data-key="t-bankAccount">Номер банковского счета</h5>
+                    <h5 class="card-title mb-0" ><?php echo app('translator')->get('translation.bankAccount'); ?></h5>
                     <div class="d-flex">
                         <button
                             data-bs-toggle="modal"
@@ -25,7 +25,7 @@
                             type="button"
                             class="btn btn-soft-success">
                             <i class="ri-add-circle-line align-middle me-1"></i>
-                            <span data-key="t-cret">Создать</span>
+                            <span><?php echo app('translator')->get('translation.cret'); ?></span>
                         </button>
                     </div>
                 </div>
@@ -34,12 +34,12 @@
                         <thead>
                             <tr>
                                 <th>№.</th>
-                                <th data-key="t-user">Пользователь</th>
-                                <th data-key="t-FullName">Наименование</th>
-                                <th data-key="t-MFO">МФО</th>
-                                <th data-key="t-NumberBank">Number Bank</th>
-                                <th data-key="t-date">Дата</th>
-                                <th data-key="t-settingTable">Роль</th>
+                                <th><?php echo app('translator')->get('translation.user'); ?></th>
+                                <th><?php echo app('translator')->get('translation.FullName'); ?></th>
+                                <th><?php echo app('translator')->get('translation.MFO'); ?></th>
+                                <th><?php echo app('translator')->get('translation.NumberBank'); ?></th>
+                                <th><?php echo app('translator')->get('translation.date'); ?></th>
+                                <th><?php echo app('translator')->get('translation.settingTable'); ?></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -77,7 +77,7 @@
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="fullscreeexampleModalLabel" data-key="t-modalTitCreate" >Новый</h5>
+                    <h5 class="modal-title" id="fullscreeexampleModalLabel" ><?php echo app('translator')->get('translation.modalTitCreate'); ?></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -85,21 +85,21 @@
                         <div class="row gy-4">
                             <div class="col-xxl-12 col-md-12">
                                 <div>
-                                    <label for="userName" class="form-label" data-key="t-FullName">Наименование</label>
+                                    <label for="userName" class="form-label"><?php echo app('translator')->get('translation.FullName'); ?></label>
                                     <input type="text" class="form-control" id="userName">
                                 </div>
                             </div>
                              <!--end col-->
                              <div class="col-xxl-12 col-md-12">
                                 <div>
-                                    <label for="userFamil" class="form-label" data-key="t-MFO">МФО</label>
+                                    <label for="userFamil" class="form-label"><?php echo app('translator')->get('translation.MFO'); ?></label>
                                     <input type="text" class="form-control" id="userFamil">
                                 </div>
                             </div>
                              <!--end col-->
                              <div class="col-xxl-12 col-md-12">
                                 <div>
-                                    <label for="telfon" class="form-label" data-key="t-bankAccount">Номер банковского счета</label>
+                                    <label for="telfon" class="form-label"><?php echo app('translator')->get('translation.bankAccount'); ?></label>
                                     <input type="text" class="form-control" id="telfon">
                                 </div>
                             </div>
@@ -109,15 +109,15 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <a   href="javascript:void(0);" class="btn btn-link link-success fw-medium" data-bs-dismiss="modal"
-                        data-key="t-modalBtnClose">
-                        <i class="ri-close-line me-1 align-middle"></i>Закрывать
+                    <a   href="javascript:void(0);" class="btn btn-link link-success fw-medium" data-bs-dismiss="modal">
+                        <i class="ri-close-line me-1 align-middle"></i><?php echo app('translator')->get('translation.modalBtnClose'); ?>
                     </a>
-                    <button type="button" class="btn btn-primary "  data-key="t-modalBtnSeve">Save changes</button>
+                    <button type="button" class="btn btn-primary "> <?php echo app('translator')->get('translation.modalBtnSeve'); ?></button>
                 </div>
             </div>
         </div>
     </div>
+
 
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('script'); ?>
@@ -138,5 +138,6 @@
 <script src="<?php echo e(URL::asset('build/js/app.js')); ?>"></script>
 
 <?php $__env->stopSection(); ?>
+
 
 <?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\OpenServer\domains\turonsoft.uz\resources\views/transactions-bank-account.blade.php ENDPATH**/ ?>

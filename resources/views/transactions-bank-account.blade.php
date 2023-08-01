@@ -18,7 +18,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="card-title mb-0"  data-key="t-bankAccount">Номер банковского счета</h5>
+                    <h5 class="card-title mb-0" >@lang('translation.bankAccount')</h5>
                     <div class="d-flex">
                         <button
                             data-bs-toggle="modal"
@@ -26,7 +26,7 @@
                             type="button"
                             class="btn btn-soft-success">
                             <i class="ri-add-circle-line align-middle me-1"></i>
-                            <span data-key="t-cret">Создать</span>
+                            <span>@lang('translation.cret')</span>
                         </button>
                     </div>
                 </div>
@@ -35,12 +35,12 @@
                         <thead>
                             <tr>
                                 <th>№.</th>
-                                <th data-key="t-user">Пользователь</th>
-                                <th data-key="t-FullName">Наименование</th>
-                                <th data-key="t-MFO">МФО</th>
-                                <th data-key="t-NumberBank">Number Bank</th>
-                                <th data-key="t-date">Дата</th>
-                                <th data-key="t-settingTable">Роль</th>
+                                <th>@lang('translation.user')</th>
+                                <th>@lang('translation.FullName')</th>
+                                <th>@lang('translation.MFO')</th>
+                                <th>@lang('translation.NumberBank')</th>
+                                <th>@lang('translation.date')</th>
+                                <th>@lang('translation.settingTable')</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -78,7 +78,7 @@
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="fullscreeexampleModalLabel" data-key="t-modalTitCreate" >Новый</h5>
+                    <h5 class="modal-title" id="fullscreeexampleModalLabel" >@lang('translation.modalTitCreate')</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -86,21 +86,21 @@
                         <div class="row gy-4">
                             <div class="col-xxl-12 col-md-12">
                                 <div>
-                                    <label for="userName" class="form-label" data-key="t-FullName">Наименование</label>
+                                    <label for="userName" class="form-label">@lang('translation.FullName')</label>
                                     <input type="text" class="form-control" id="userName">
                                 </div>
                             </div>
                              <!--end col-->
                              <div class="col-xxl-12 col-md-12">
                                 <div>
-                                    <label for="userFamil" class="form-label" data-key="t-MFO">МФО</label>
+                                    <label for="userFamil" class="form-label">@lang('translation.MFO')</label>
                                     <input type="text" class="form-control" id="userFamil">
                                 </div>
                             </div>
                              <!--end col-->
                              <div class="col-xxl-12 col-md-12">
                                 <div>
-                                    <label for="telfon" class="form-label" data-key="t-bankAccount">Номер банковского счета</label>
+                                    <label for="telfon" class="form-label">@lang('translation.bankAccount')</label>
                                     <input type="text" class="form-control" id="telfon">
                                 </div>
                             </div>
@@ -110,15 +110,15 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <a   href="javascript:void(0);" class="btn btn-link link-success fw-medium" data-bs-dismiss="modal"
-                        data-key="t-modalBtnClose">
-                        <i class="ri-close-line me-1 align-middle"></i>Закрывать
+                    <a   href="javascript:void(0);" class="btn btn-link link-success fw-medium" data-bs-dismiss="modal">
+                        <i class="ri-close-line me-1 align-middle"></i>@lang('translation.modalBtnClose')
                     </a>
-                    <button type="button" class="btn btn-primary "  data-key="t-modalBtnSeve">Save changes</button>
+                    <button type="button" class="btn btn-primary "> @lang('translation.modalBtnSeve')</button>
                 </div>
             </div>
         </div>
     </div>
+
 
 @endsection
 @section('script')
@@ -139,3 +139,4 @@
 <script src="{{ URL::asset('build/js/app.js') }}"></script>
 
 @endsection
+

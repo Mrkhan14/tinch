@@ -230,7 +230,7 @@ return [
     "range-area" => "Range Area",
     "funnel" => "Funnel",
 
-
+    "titleBody" => "  Автоматизация бизнес-процессо",
     "settingPraduk" => "Продукты",
     "widgets" => "Dashboard",
     "settingCurrencies" => "Валюты ",
