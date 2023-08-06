@@ -297,6 +297,8 @@ return [
     "NumberBank" => "Номер банковского",
     "cret" => "Создать",
     "paidDate" => "Оплаченный дате ",
+    "outgoingPayments" => "Исходящий Платежи",
+    "incomingPayments" => "Входящий Платежи",
     "axad" => "axad"
 ];
 ?>
