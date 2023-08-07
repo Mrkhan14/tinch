@@ -41,6 +41,25 @@
 
                 <li class="nav-item">
                     <a class="nav-link menu-link"
+                    href="#store"
+                    data-bs-toggle="collapse"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="store">
+
+                        <i class="ri-shopping-basket-2-line"></i> <span><?php echo app('translator')->get('translation.storeTransition'); ?></span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="store">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="store-transition" class="nav-link"><?php echo app('translator')->get('translation.storeTransition'); ?></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link"
                     href="#transactions"
                     data-bs-toggle="collapse"
                     role="button"
