@@ -274,6 +274,7 @@ return [
     "detali" => "Детали ",
     "delet" => "Удалить",
     "Miqdor" => "Количество",
+    "miqdorMin" => "Коли",
     "ProductArrivalPriceru" => "Цена прибытия товара ",
     "ProductArrivalPrice" => "Mahsulut kelish narxi ",
     "letProductBeTarorru" => "Пусть продукт будет товаром",
@@ -299,6 +300,11 @@ return [
     "paidDate" => "Оплаченный дате ",
     "outgoingPayments" => "Исходящий Платежи",
     "incomingPayments" => "Входящий Платежи",
+    "storeTransition" => "Переход",
+    "incomingPayments" => "Входящий Платежи",
+    "toll" => "Потери",
+    "arrivalPrice" => "Цена товара",
+    "typeSale" => "Тип Наси Цена",
     "axad" => "axad"
 ];
 ?>
