@@ -304,7 +304,10 @@ return [
     "incomingPayments" => "Входящий Платежи",
     "toll" => "Потери",
     "arrivalPrice" => "Цена товара",
-    "typeSale" => "Тип Наси Цена",
+    "typeSale" => "Тип Продажа",
+    "saleProduct" => "Тип Продажа",
+    "consignment" => "Партия товара",
+
     "axad" => "axad"
 ];
 ?>
