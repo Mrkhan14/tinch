@@ -135,7 +135,7 @@
                         <div class="row gy-4">
                             <div class="col-xxl-4 col-md-6 col-12 mb-3">
                                 <label for="hrRol" class="form-label">@lang('translation.provider')</label>
-                                <select placeholder="salom" class="form-control"
+                                <select class="form-control"
                                         id="choices-single-no-sorting"
                                         name="choices-single-no-sorting"
                                         data-choices data-choices-sorting-false>
@@ -160,13 +160,21 @@
                                     <option value="Michigan">Michigan</option>
                                 </select>
                             </div>
+                             <!--end col-->
+                            <div class="col-xxl-4 col-md-6 col-12  mb-3">
+                                <div>
+                                     <label for="consignment" class="form-label">@lang('translation.consignment')</label>
+                                    <input type="text" class="form-control" id="consignment"  placeholder="@lang('translation.consignment')">
+                                </div>
+                            </div>
+                             <!--end col-->
                             <div class="col-xxl-4 col-md-6 col-12  mb-3">
                                 <div>
                                     <label for="date"  class="form-label">@lang('translation.date')</label>
-                                    <input type="date" class="form-control" id="date">
+                                    <input type="date" class="form-control" id="date" placeholder="@lang('translation.date')">
                                 </div>
                             </div>
-                            <!--end col-->
+                             <!--end col-->
                         </div>
                         <!--end row-->
 
@@ -182,8 +190,7 @@
                                     </select>
                                 </div>
                                 <div>
-                                    <label for="userName" class="form-label">@lang('translation.settingCurrenciesKurs')</label>
-                                    <input type="text" class="form-control" id="userName">
+                                    <input type="text" class="form-control" id="userName" placeholder="@lang('translation.settingCurrenciesKurs')">
                                 </div>
                             </div>
                         </div>
@@ -227,13 +234,14 @@
                                 <tr>
                                     <th scope="col">Id</th>
                                     <th scope="col">@lang('translation.provider')</th>
-                                    <th scope="col">@lang('translation.settingMeasurement')</th>
-                                    <th scope="col">@lang('translation.miqdorMin')</th>
+                                    <th scope="col" style="width: 100px;">@lang('translation.settingMeasurement')</th>
+                                    <th scope="col" style="width: 150px;">@lang('translation.miqdorMin')</th>
                                     <th scope="col">@lang('translation.settingWarehouses')</th>
-                                    <th scope="col">@lang('translation.toll')</th>
+                                    <th scope="col" style="width: 200px;">@lang('translation.expenses') %</th>
                                     <th scope="col">@lang('translation.arrivalPrice')</th>
+                                    <th scope="col">@lang('translation.arrivalPrice'), @lang('translation.expenses')</th>
                                     <th scope="col">@lang('translation.typeSale')</th>
-                                    <th scope="col">@lang('translation.typeSale')</th>
+                                    <th scope="col">@lang('translation.saleProduct')</th>
                                     <th scope="col"></th>
                                 </tr>
                             </thead>
@@ -241,13 +249,27 @@
                                 <tr>
                                     <th scope="row">1</th>
                                     <td>Implement new UX</td>
-                                    <td><span class="badge badge-soft-primary">Backlog</span></td>
-                                    <td>Lanora Sandoval</td>
-                                    <td>Lanora Sandoval</td>
-                                    <td>Lanora Sandoval</td>
-                                    <td>Lanora Sandoval</td>
-                                    <td>Lanora Sandoval</td>
-                                    <td>$4,521</td>
+                                    <td>kg</td>
+                                    <td><input type="text" class="form-control" id="userName"></td>
+                                    <td>
+                                        <select class="form-select mb-1">
+                                            <option selected></option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="text" class="form-control" id="userName"></td>
+                                    <td><input type="text" class="form-control" id="userName"></td>
+                                    <td> 10 200 00 So'm </td>
+                                    <td>
+                                        <select class="form-select mb-1">
+                                            <option selected></option>
+                                            <option value="1">%</option>
+                                            <option value="2">Цена </option>
+                                        </select>
+                                    </td>
+                                     <td><input type="text" class="form-control" id="userName"></td>
                                     <td>
                                         <div class="dropdown">
                                             <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
