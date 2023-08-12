@@ -14,7 +14,6 @@
 @slot('title')Datatables @endslot
 @endcomponent
 
-
     <div class="row">
         <div class="col-lg-12">
             <div class="card">
@@ -121,7 +120,6 @@
             </div>
         </div><!--end col-->
     </div><!--end row-->
-
 
     <div class="modal fade" id="fullscreeexampleModalClient" tabindex="-1" aria-labelledby="fullscreeexampleModalClientLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
@@ -286,8 +284,6 @@
                                 </tr>
                             </tbody>
                         </table>
-
-
                     </div>
                 </div>
                 <div class="modal-footer">
