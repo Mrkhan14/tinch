@@ -53,4 +53,4 @@
 
     php artisan serve
 
-[My Site](http://tinchb2b.uz/)
+[My Site](http://aazimov.uz/)
