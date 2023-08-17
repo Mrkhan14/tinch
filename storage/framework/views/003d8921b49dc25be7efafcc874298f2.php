@@ -55,7 +55,7 @@
                                 <th><?php echo app('translator')->get('translation.settingPaymentTypes'); ?></th>
                                 <th><?php echo app('translator')->get('translation.settingCurrencies'); ?></th>
                                 <th><?php echo app('translator')->get('translation.settingCurrenciesKurs'); ?></th>
-                                <th><?php echo app('translator')->get('translation.Цена'); ?></th>
+                                <th><?php echo app('translator')->get('translation.priceru'); ?></th>
                                 <th>Create Date</th>
 
                                 <th>Action</th>

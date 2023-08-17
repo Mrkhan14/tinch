@@ -56,7 +56,7 @@
                                 <th>@lang('translation.settingPaymentTypes')</th>
                                 <th>@lang('translation.settingCurrencies')</th>
                                 <th>@lang('translation.settingCurrenciesKurs')</th>
-                                <th>@lang('translation.Цена')</th>
+                                <th>@lang('translation.priceru')</th>
                                 <th>Create Date</th>
 
                                 <th>Action</th>
