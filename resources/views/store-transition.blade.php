@@ -42,13 +42,12 @@
                                     </div>
                                 </th>
                                 <th>No.</th>
-                                <th>@lang('translation.payments')</th>
-                                <th>@lang('translation.settingPaymentTypes')</th>
+                                <th>@lang('translation.provider')</th>
+                                <th>@lang('translation.consignment')</th>
                                 <th>@lang('translation.settingCurrencies')</th>
                                 <th>@lang('translation.settingCurrenciesKurs')</th>
-                                <th>@lang('translation.Цена')</th>
+                                <th>@lang('translation.totalSum')</th>
                                 <th>Create Date</th>
-
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -61,37 +60,7 @@
                                 </th>
                                 <td>01</td>
                                 <td><span class="badge bg-info fs-12">Ali Mark</span></td>
-                                <td>@lang('translation.incomingPayments')</td>
-                                <td>USD </td>
-                                <td>11 700</td>
-                                <td>9 200 USD</td>
-                                <td>03 Oct, 2021</td>
-                                <td>
-                                    <div class="dropdown d-inline-block">
-                                        <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <i class="ri-more-fill align-middle"></i>
-                                        </button>
-                                        <ul class="dropdown-menu dropdown-menu-end">
-                                            <li><a href="#!" class="dropdown-item"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
-                                            <li><a class="dropdown-item edit-item-btn"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit</a></li>
-                                            <li>
-                                                <a class="dropdown-item remove-item-btn">
-                                                    <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">
-                                    <div class="form-check">
-                                        <input class="form-check-input fs-15" type="checkbox" name="checkAll" value="option1">
-                                    </div>
-                                </th>
-                                <td>01</td>
-                                <td><span class="badge bg-success fs-12">Ali Mark</span></td>
-                                <td>@lang('translation.outgoingPayments')</td>
+                                <td>Партия товара</td>
                                 <td>USD </td>
                                 <td>11 700</td>
                                 <td>9 200 USD</td>
