@@ -268,7 +268,7 @@ return [
     "date" => "Дата  ",
     "warehousesMoving" => "Переместить Склад ",
     "warehousesMoving1" => "Исходящий склад",
-    "warehousesMoving12" => "Входящий склад",
+    "warehousesMoving2" => "Входящий склад",
     "praductPart" => "Продукты Партия",
     "qanchaKerak" => "Количество",
     "detali" => "Детали ",

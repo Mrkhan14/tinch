@@ -35,12 +35,13 @@
                         <thead>
                             <tr>
                                 <th>№.</th>
-                                <th>@lang('translation.qanchaKerak')</th>
+
                                 <th>@lang('translation.warehousesMoving1')</th>
-                                <th>@lang('translation.warehousesMoving2')</thdata-key=>
-                                <th>@lang('translation.date')</thdata-key=>
-                                <th>@lang('translation.detali')</thdata-key=>
-                                <th>@lang('translation.settingTable')</thdata-key=>
+                                <th>@lang('translation.warehousesMoving2')</th>
+                                <th>@lang('translation.qanchaKerak')</th>
+                                <th>@lang('translation.date')</th>
+                                <th>@lang('translation.detali')</th>
+                                <th>@lang('translation.settingTable')</th>
                             </tr>
                         </thead>
                         <tbody>
