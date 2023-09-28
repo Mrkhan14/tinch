@@ -307,6 +307,7 @@ return [
     "typeSale" => "Тип Продажа",
     "saleProduct" => "Тип Продажа",
     "consignment" => "Партия товара",
+    "cod" => "Код",
 
     "axad" => "axad"
 ];
