@@ -78,8 +78,8 @@
 
 
     <!-- modals -->
-    <div class="modal fade" id="fullscreeexampleModal" tabindex="-1" aria-labelledby="fullscreeexampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+    <div class="modal fade"  data-bs-backdrop="static" id="fullscreeexampleModal" tabindex="-1" aria-labelledby="fullscreeexampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">@lang('translation.modalTitCreate')</h5>
@@ -88,7 +88,7 @@
                 <div class="modal-body">
                     <div class="live-preview">
                         <div class="row gy-4">
-                            <div class="col-xxl-4 col-md-12">
+                            <div class="col-xxl-12 col-md-12">
                                 <div>
                                     <label for="basiInput" class="form-label">@lang('translation.label')</label>
                                     <input type="text" class="form-control" id="basiInput">
@@ -96,7 +96,7 @@
                             </div>
                             <!--end col-->
 
-                            <div class="col-xxl-4 col-md-12">
+                            <div class="col-xxl-6 col-md-12">
                                 <label for="warehousesMoving1" class="form-label">
                                    @lang('translation.settingGuruh')
                                 </label>
@@ -109,7 +109,7 @@
                             </div>
                             <!--end col-->
 
-                            <div class="col-xxl-4 col-md-12">
+                            <div class="col-xxl-6 col-md-12">
                                 <label for="warehousesMoving1" class="form-label">
                                    @lang('translation.settingWarehouses')
                                 </label>
@@ -122,7 +122,7 @@
                             </div>
                             <!--end col-->
 
-                             <div class="col-xxl-4 col-md-12">
+                             <div class="col-xxl-6 col-md-12">
                                 <label for="warehousesMoving1" class="form-label">
                                    @lang('translation.settingMeasurement')
                                 </label>
@@ -135,7 +135,7 @@
                             </div>
                             <!--end col-->
 
-                            <div class="col-xxl-4 col-md-12">
+                            <div class="col-xxl-6 col-md-12">
                                 <div>
                                     <label for="cod" class="form-label">@lang('translation.cod')</label>
                                     <input type="text" class="form-control" id="cod">
