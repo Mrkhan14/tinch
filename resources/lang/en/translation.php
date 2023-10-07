@@ -309,9 +309,8 @@ return [
     "consignment" => "Партия товара",
     "cod" => "Код",
     "sale" => "Продажа",
-
-
     "axad" => "axad"
+
 ];
 ?>
 

@@ -38,7 +38,6 @@
                          <i class="ri-dashboard-2-line"></i> <span>@lang('translation.dashboards')</span>
                     </a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link menu-link"
                     href="#sale"
@@ -57,7 +56,6 @@
                         </ul>
                     </div>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link menu-link"
                     href="#store"
@@ -218,4 +216,5 @@
 </div>
 <!-- Left Sidebar End -->
 <!-- Vertical Overlay-->
+
 <div class="vertical-overlay"></div>
