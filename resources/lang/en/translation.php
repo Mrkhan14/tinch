@@ -280,16 +280,6 @@ return [
     "letProductBeTarorru" => "Пусть продукт будет товаром",
     "letProductBeTaror" => "Mahsulot taror bo'lshi ",
     "client" => "Клиент  ",
-    "provider" => "Поставщик ",
-    "counterparties" => "Контрагенты",
-    "commen" => "Комментарий",
-    "user" => "Пользователь",
-    "nameCompany" => "Компании",
-    "priceru" => "Цена",
-    "rest" => "Остальные",
-    "typePayment" => "Тип платежа",
-    "discounts" => "Скидки",
-
     "transactions" => "Транзакции",
     "payments" => "Платежи",
     "expenses" => "Расходов",
@@ -310,7 +300,15 @@ return [
     "cod" => "Код",
     "sale" => "Продажа",
     "axad" => "axad"
-
+    "provider" => "Поставщик ",
+    "counterparties" => "Контрагенты",
+    "commen" => "Комментарий",
+    "user" => "Пользователь",
+    "nameCompany" => "Компании",
+    "priceru" => "Цена",
+    "rest" => "Остальные",
+    "typePayment" => "Тип платежа",
+    "discounts" => "Скидки",
 ];
 ?>
 
